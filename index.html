@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contanier">
+        <div class="card input-wrapper">
+            <div class="from">
+                <span class="heading">From : </span>
+                <div class="dropdown-contanier " id="input-language">
+                    <div class="dropdown-toggle">
+                        <i class='bx bx-globe'></i>
+                        <span class="selected" data-value="auto">Auto Detect</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li class="option active">Option 1</li>
+                        <li class="option ">Option 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-area">
+             
+            <textarea id="input-text"
+            cols="30" 
+            rows="10" placeholder="Enter text please"></textarea>
+            <div class="chars"><span id="input-chars">0 </span> / 5000
+            </div>
+                <div class="card-bottom">
+                    <p>Or choose your Document</p>
+                    <label for="upload-document">
+                        <span id="upload-title">Choose file</span>
+                        <i class="bx bx-cloud-download"></i>
+                        <input type="file" id="upload-document" hidden>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+         <div class="swap-positon">
+            <i class='bx bx-sort'></i>
+         </div>
+        </div>
+        <div class="card output-wrapper">
+            <div class="to">
+                <span class="heading">To : </span>
+                <div class="dropdown-contanier " id="Output-language">
+                    <div class="dropdown-toggle">
+                        <i class='bx bx-globe'></i>
+                        <span class="selected" data-value="en">English</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li class="option active">Option 1</li>
+                        <li class="option ">Option 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-area">
+            <textarea id="output-text" cols="30" rows="10" placeholder="Translated text"></textarea>
+            
+                <div class="card-bottom">
+                    <p>Or download your Document</p>
+                    <button id="download-document">
+                        <span>Download</span>
+                        <i class="bx bx-cloud-download"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mode">
+            <label for="dark-mode-btn" class="toggle">
+                <div class="toggle-track">
+                    <input type="checkbox" class="toggle-checkbox" id="dark-mode-btn">
+                    <span class="toggle-thumb"></span>
+                    <img src="sun.png">
+                    <img src="moon.png">
+                </div>
+            </label>
+        </div>
+    </div>
+</body>
+<script src="languages.js"></script>
+<script src="script.js"></script>
+</html>
